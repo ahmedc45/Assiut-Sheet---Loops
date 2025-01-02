@@ -37,18 +37,7 @@ short Big_Number(short N, short M) {
     return N > M ? N : M;
 }
 
-
-int main() 
-{
-    // Loop شيت اسيوط
-    return 0;
-}
-
-
-
-
-
-
+// ------------------------------------ //
 
 void _1_to_N()
 {
@@ -481,18 +470,14 @@ void Convert_To_Decimal_2()
     while (T--)
     {
         int N;
-        cin >> N;  // الرقم المدخل
-
-        // حساب عدد الـ 1s في التمثيل الثنائي
+        cin >> N;  
         int count = 0;
         while (N > 0)
         {
-            count += N % 2;  // إذا كان البت الأخير 1 أضفه للعدد
-            N /= 2;          // اقسم الرقم على 2 لإزاحة البتات
+            count += N % 2;
+            N /= 2;      
         }
-
-        // إنشاء الرقم العشري الذي تمثيله الثنائي يحتوي فقط على عدد الـ 1s
-        int result = (1 << count) - 1;  // إنشاء رقم يحتوي على count من الـ 1s
+        int result = (1 << count) - 1;  
         cout << result << "\n";
 
         
@@ -549,3 +534,14 @@ void Three_Numbers()
 
     cout << Count;
 }
+
+int main()
+{
+    // Loop شيت اسيوط
+    return 0;
+}
+
+
+
+
+
